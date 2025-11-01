@@ -1,0 +1,13 @@
+{
+  "log_sources": [
+    "logs/app.log",
+    "logs/system.log",
+    "logs/error.log"
+  ],
+  "severity_levels": [
+    "ERROR",
+    "WARN",
+    "INFO"
+  ],
+  "output_file": "aggregated_logs.json"
+}
