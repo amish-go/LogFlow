@@ -1,35 +1,33 @@
-# ASXY
+# LogFlow
 
-```
-    ___    ____  __  __
-   /   |  / __ \/ / / /
-  / /| | / /_/ / /_/ / 
- / ___ |/ _, _/ __  /  
-/_/  |_/_/ |_/_/ /_/   
-```
+<div align="center">
 
-## Go Log Aggregator
+![Go Version](https://img.shields.io/badge/Go-1.16+-00ADD8?style=for-the-badge&logo=go)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 Collect logs from multiple files, filter by severity, and output to console or JSON.
 
----
-
-## Folder Structure
-
-```
-log-aggregator/
-├─ main.go           # Entry point of the program
-├─ aggregator/
-│  ├─ aggregator.go  # Collects and filters logs
-├─ utils/
-│  ├─ file_reader.go # Reads log files
-├─ config/
-│  ├─ config.json    # Stores log sources, severity, and output file
-```
+</div>
 
 ---
 
-## Example config/config.json
+## Features
+
+- Collect logs from multiple sources
+- Filter by severity level (INFO, WARN, ERROR)
+- Console and JSON output
+- Simple configuration
+
+## Installation
+
+```bash
+cd logflow
+go run main.go
+```
+
+## Configuration
+
+Edit `config/config.json`:
 
 ```json
 {
@@ -39,38 +37,26 @@ log-aggregator/
 }
 ```
 
----
-
-## Terminal Commands
-
-### Go to project folder
+## Usage
 
 ```bash
-cd log-aggregator
-```
-
-### Run project
-
-```bash
+# Run
 go run main.go
+
+# Build binary
+go build -o logflow main.go
+./logflow
 ```
-
-### Build binary (optional)
-
-```bash
-go build -o log-aggregator main.go
-./log-aggregator
-```
-
----
 
 ## Output
 
-* Logs printed in console
-* Aggregated logs saved in `aggregated_logs.json`
+- Logs printed in console
+- Aggregated logs saved in `aggregated_logs.json`
 
----
+## License
+
+MIT License
 
 ## Contact
 
-[contact.amish@yahoo.com](mailto:contact.amish@yahoo.com)
+Email: contact.amish@yahoo.com
