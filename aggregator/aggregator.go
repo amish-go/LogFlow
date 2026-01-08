@@ -1,4 +1,4 @@
-g//code written by amish 
+//code written by amish 
 
 package aggregator
 
